@@ -5,7 +5,7 @@ event (root, { id }) {
     return models.Event.findById(id);
   },
   events (root, args, context) {
-    return models.Event.findAll(argumets, context);
+    return models.Event.findAll({}, context);
   },
 user (root, { id }) {
     return models.User.findById(id);
