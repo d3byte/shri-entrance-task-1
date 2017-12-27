@@ -9,11 +9,3 @@ module.exports.index = function (req, res) {
     </html>
     `);
 };
-
-module.exports.graphqlGet = function (req, res) {
-  
-};
-
-module.exports.graphqlPost = function (req, res) {
-
-};
