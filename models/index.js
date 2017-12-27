@@ -4,18 +4,14 @@ const scheme = require('./scheme');
 
 const Op = Sequelize.Op;
 
-console.log('yay')
-
 const sequelize = new Sequelize(null, null, null, {
   dialect: 'sqlite',
   storage: 'db.sqlite3',
 
-operatorsAliases: { $and: Op.and },
+  operatorsAliases: { $and: Op.and },
 
   logging: false
 });
-
-console.log('yay')
 
 scheme(sequelize);
 sequelize.sync();

@@ -20,7 +20,7 @@ module.exports = function (sequelize) {
   });
 
   Event.belongsToMany(User, { through: 'Events_Users' });
-  User.belongsToMany(Event, { through: 'Events_Users' });
+  User.belongsToMany(Event, { through: 'Users_Events' });
   Event.belongsTo(Room);
 
   return {

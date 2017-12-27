@@ -41,8 +41,10 @@ module.exports = {
             .then(event => {
               event.setRoom(roomId);
 
-              return event.setUsers(usersIds)
-                    .then(() => event);
+              event.setUsers(usersIds);
+              console.log(event)
+              
+              return event;
             });
   },
 
