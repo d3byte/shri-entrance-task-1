@@ -17,6 +17,7 @@ room (root, { id }) {
     return models.Room.findById(id);
   },
   rooms (root, args, context) {
-    return models.Room.findAll({ offset: 1 }, context);
+    // return models.Room.findAll({ offset: 1 }, context);
+    return models.Room.findAll({}, context);
   }
 };
