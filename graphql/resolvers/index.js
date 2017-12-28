@@ -10,12 +10,12 @@ module.exports = function resolvers () {
     Mutation: mutation,
 
     Event: {
-      users (event) {
-        event.getUsers();
+      room(event) {
+        return event.getRoom();
       },
-      room (event) {
-        event.getRoom();
-      }
+      users (event) {
+        return event.getUsers();
+      },
     },
 
     Date: GraphQLDate

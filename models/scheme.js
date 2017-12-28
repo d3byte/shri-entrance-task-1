@@ -18,10 +18,10 @@ module.exports = function (sequelize) {
     dateStart: Sequelize.DATE,
     dateEnd: Sequelize.DATE
   });
-
-  Event.belongsToMany(User, { through: 'Events_Users' });
-  User.belongsToMany(Event, { through: 'Users_Events' });
+  
   Event.belongsTo(Room);
+  Event.belongsToMany(User, { through: 'Events_Users', as: 'users'});
+  User.belongsToMany(Event, { through: 'Events_Users'});
 
   return {
     Room, Event, User

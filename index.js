@@ -1,5 +1,7 @@
 const path = require('path');
 
+const models = require('./models')
+
 const express = require('express');
 const bodyParser = require('body-parser');
 
