@@ -66,10 +66,10 @@ Grapql не хочет подхватывать инфу, полученную �
 ````javascript
 Event: {
     room(event) {
-    return event.getRoom();
+        return event.getRoom();
     },
     users (event) {
-    return event.getUsers();
+        return event.getUsers();
     },
 },
 ````
