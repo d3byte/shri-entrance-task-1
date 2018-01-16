@@ -86,3 +86,5 @@ changeEventRoom (root, { id, roomId }, context) {
             });
 }
 ````
+
+7. Отстутствие обязательного поля avatarUrl в типе UserInput
